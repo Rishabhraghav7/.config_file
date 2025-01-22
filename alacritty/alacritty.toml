@@ -1,0 +1,66 @@
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 14.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Regular"
+
+[colors.normal]
+# black      = '#171421'
+red        = '#c01c28'		#
+# green      = '#26a269'
+# yellow     = '#a2734c'
+# blue       = '#12488b'
+# magenta    = '#a347ba'
+# cyan       = '#2aa1b3'
+# white      = '#d0cfcc'
+#
+# # Bright colors
+[colors.bright]
+# black      = '#5e5c64'
+red        = '#f66151'		#
+# green      = '#33d17a'
+yellow     = '#e9ad0c'		#
+# blue       = '#2a7bde'
+# magenta    = '#c061cb'
+# cyan       = '#33c7de'
+# white      = '#ffffff'
+# ###########################################
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[window]
+opacity = 0.84
+blur = true
+startup_mode = "Maximized"
+dynamic_title = false
+decorations_theme_variant = "Dark"
+
+[window.padding]
+x = 15
+y = 15
+
+[cursor]
+style = "beam"
+
+[general]
+import = [
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
