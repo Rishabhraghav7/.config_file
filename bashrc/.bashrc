@@ -97,6 +97,8 @@ alias app="sudo pacman -S"
 alias app-remove='sudo pacman -R'
 alias app-remove-res='sudo pacman -Rcns'
 alias updt='paru'
+alias gita='git add .'
+alias gp='git push -u origin master'
 export PATH=~/.local/bin:$PATH
 export CHROME_EXECUTABLE="/bin/google-chrome-stable"#
 # ~/.bashrc
