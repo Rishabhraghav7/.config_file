@@ -93,5 +93,17 @@ alias y="yay"
 alias n="nvim"
 alias lg="lazygit"
 
+alias app="sudo pacman -S"
+alias app-remove='sudo pacman -R'
+alias app-remove-res='sudo pacman -Rcns'
+alias updt='paru'
 export PATH=~/.local/bin:$PATH
-export CHROME_EXECUTABLE="/bin/google-chrome-stable"
+export CHROME_EXECUTABLE="/bin/google-chrome-stable"#
+# ~/.bashrc
+#
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
