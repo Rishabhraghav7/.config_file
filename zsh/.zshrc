@@ -1,4 +1,9 @@
 ## Path section
+
+echo -e "\033[1;32mWelcome to your terminal, $(whoami)! Have a great day!\033[0m"
+# Show greeting after each command prompt
+# PROMPT='$(echo -e "\033[1;32mWelcome, $(whoami)! Let's get to work!\033[0m")% '
+
 # Set $PATH if ~/.local/bin exist
 if [ -d "$HOME/.local/bin" ]; then
     export PATH=$HOME/.local/bin:$PATH
@@ -6,7 +11,7 @@ fi
 
 eval "$(starship init zsh)"
 function set_win_title(){
-    echo -ne "\033]0; $USER@$HOST:${PWD/$HOME/~} \007"
+    echo -ne "\033]0;  $USER@$HOST:${PWD/$HOME/~} \007"
 }
 precmd_functions+=(set_win_title)
 
@@ -30,7 +35,7 @@ source /usr/share/fzf/completion.zsh
 [[ -e /usr/share/doc/pkgfile/command-not-found.zsh ]] && source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # Advanced command-not-found hook
-[[ -e /usr/share/doc/find-the-command/ftc.zsh ]] && source /usr/share/doc/find-the-command/ftc.zsh
+# [[ -e /usr/share/doc/find-the-command/ftc.zsh ]] && source /usr/share/doc/find-the-command/ftc.zsh
 
 
 ## Options section
@@ -52,7 +57,7 @@ setopt pushdminus
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
-zstyle ':completion:*' rehash true                              # automatically find new executables in path 
+zstyle ':completion:*' rehash true                              # automatically find new executables in path
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
 zstyle ':completion:*' completer _expand _complete _ignored _approximate
 zstyle ':completion:*' menu select
@@ -233,7 +238,7 @@ alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/p
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
 
 # Help people new to Arch
-alias apt='man pacman'
+alias app='man pacman'
 alias apt-get='man pacman'
 alias please='sudo'
 alias tb='nc termbin.com 9999'
@@ -256,5 +261,4 @@ export MCFLY_INTERFACE_VIEW=BOTTOM
 export MCFLY_RESULTS_SORT=LAST_RUN
 eval "$(mcfly init zsh)"
 
-## Run neofetch
-neofetch
+eval "$(zoxide init zsh)"
