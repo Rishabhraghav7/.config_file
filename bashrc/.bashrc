@@ -99,7 +99,8 @@ alias app-remove-res='sudo pacman -Rcns'
 alias updt='paru'
 alias gita='git add .'
 alias gp='git push -u origin master'
-alias netid='echo"https://firewall.kongu.edu:1000/logout?123"'
+alias netid='echo "http://firewall.kongu.edu:1000/logout?123"'
+alias gc='git commit -m'
 export PATH=~/.local/bin:$PATH
 export CHROME_EXECUTABLE="/bin/google-chrome-stable"#
 # ~/.bashrc
