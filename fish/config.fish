@@ -161,10 +161,10 @@ alias pacdiff 'sudo -H DIFFPROG=meld pacdiff'
 
 # Get the error messages from journalctl
 alias jctl 'journalctl -p 3 -xb'
-
+alias netid 'http://firewall.kongu.edu:1000/logout?123'
 # Recent installed packages
 alias rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
-# 
+#
 ## Run fastfetch if session is interactive
 # if status --is-interactive && type -q fastfetch
 # 	fastfetch --config neofetch.jsonc
