@@ -161,7 +161,9 @@ alias pacdiff 'sudo -H DIFFPROG=meld pacdiff'
 
 # Get the error messages from journalctl
 alias jctl 'journalctl -p 3 -xb'
-alias netid 'echo"http://firewall.kongu.edu:1000/logout?123"'
+#alias netid 'echo"http://firewall.kongu.edu:1000/logout?123"'
+alias netid='echo "http://firewall.kongu.edu:1000/logout?123"'
+
 alias ga 'git add .'
 alias gc 'git commit -m'
 alias gp 'git push -u origin master'
