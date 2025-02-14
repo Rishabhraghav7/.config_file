@@ -24,6 +24,7 @@ fi
 #source /usr/share/doc/find-the-command/ftc.bash
 
 ## Useful aliases
+#toilet -f smblock "Welcome , Rishabh "
 
 # Replace ls with exa
 alias ls='exa -al --color=always --group-directories-first --icons'     # preferred listing
@@ -97,7 +98,7 @@ alias app="sudo pacman -S"
 alias app-remove='sudo pacman -R'
 alias app-remove-res='sudo pacman -Rcns'
 alias updt='paru'
-alias gita='git add .'
+alias ga='git add .'
 alias gp='git push -u origin master'
 alias netid='echo "http://firewall.kongu.edu:1000/logout?123"'
 alias gc='git commit -m'
@@ -110,4 +111,4 @@ export CHROME_EXECUTABLE="/bin/google-chrome-stable"#
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
+PS1='\[\e[1;32m\]\u@\h:\w\$ \[\e[0m\]'
