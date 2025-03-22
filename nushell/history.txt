@@ -1,0 +1,13 @@
+clear 
+ls
+micro ~/.nu
+ls
+la -a
+last
+cd .config
+ls
+ls -all
+ls | grep .
+micro ~/.nushell
+cd nushell/
+ls
