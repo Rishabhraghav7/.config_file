@@ -4,6 +4,8 @@
 export LC_ALL=en_IN.UTF-8
 export LANG=en_IN.UTF-8
 
+#use it for non-nixos
+
 # Load starship prompt if starship is installed
 # if [ -x /usr/bin/starship ]; then
 # 	__main() {
@@ -19,7 +21,9 @@ export LANG=en_IN.UTF-8
 # 	__main
 # 	unset -f __main
 # fi
-##for nixos
+#
+#
+##use it for nixos
 source <(starship init bash --print-full-init)
 
 # Advanced command-not-found hook
