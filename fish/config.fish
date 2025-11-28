@@ -174,5 +174,5 @@ alias rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 # if status --is-interactive && type -q fastfetch
 # 	fastfetch --config neofetch.jsonc
 # end
-
+alias tempbg ' swaybg -i "/home/rishabh/desktop_wallpaper/kisuke-urahara-bleach-rebirth-of-souls-4k-wallpaper-uhdpaper.com-180@5@e.jpg"'
 zoxide init fish --cmd 'cd' | source
